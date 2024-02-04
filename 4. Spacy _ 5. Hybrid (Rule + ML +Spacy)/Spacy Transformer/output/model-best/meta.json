@@ -1,0 +1,112 @@
+{
+  "lang":"en",
+  "name":"pipeline",
+  "version":"0.0.0",
+  "spacy_version":">=3.5.2,<3.6.0",
+  "description":"",
+  "author":"",
+  "email":"",
+  "url":"",
+  "license":"",
+  "spacy_git_version":"Unknown",
+  "vectors":{
+    "width":0,
+    "vectors":0,
+    "keys":0,
+    "name":null,
+    "mode":"default"
+  },
+  "labels":{
+    "transformer":[
+
+    ],
+    "ner":[
+      "College Name",
+      "Companies worked at",
+      "Degree",
+      "Designation",
+      "Email Address",
+      "Graduation Year",
+      "Location",
+      "Name",
+      "Skills",
+      "UNKNOWN",
+      "Years of Experience"
+    ]
+  },
+  "pipeline":[
+    "transformer",
+    "ner"
+  ],
+  "components":[
+    "transformer",
+    "ner"
+  ],
+  "disabled":[
+
+  ],
+  "performance":{
+    "ents_f":0.9683054654,
+    "ents_p":0.9812847749,
+    "ents_r":0.9556650246,
+    "ents_per_type":{
+      "Name":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "Location":{
+        "p":0.9920318725,
+        "r":0.9764705882,
+        "f":0.9841897233
+      },
+      "Email Address":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "Designation":{
+        "p":0.9931506849,
+        "r":0.9634551495,
+        "f":0.9780775717
+      },
+      "Companies worked at":{
+        "p":0.9400921659,
+        "r":0.953271028,
+        "f":0.9466357309
+      },
+      "Skills":{
+        "p":0.985645933,
+        "r":0.811023622,
+        "f":0.8898488121
+      },
+      "College Name":{
+        "p":1.0,
+        "r":0.9888268156,
+        "f":0.9943820225
+      },
+      "Graduation Year":{
+        "p":0.9933333333,
+        "r":0.9867549669,
+        "f":0.9900332226
+      },
+      "Degree":{
+        "p":0.9822485207,
+        "r":0.994011976,
+        "f":0.9880952381
+      },
+      "Years of Experience":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "UNKNOWN":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      }
+    },
+    "transformer_loss":218.2924485832,
+    "ner_loss":347.4620404686
+  }
+}
