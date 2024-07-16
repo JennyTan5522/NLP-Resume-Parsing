@@ -24,11 +24,29 @@ Based on our research, not all the resumes will be cleaned in the NER processes.
 CV Recommendation Model
 - TF-IDF vectoriser to find the important terms inside the document and then computes the cosine similarity between the job description and CV.
 - Purpose: Allows the HR department to check for the similarity of job distributions based on Top N candidates.
+  
+  ![image](https://github.com/user-attachments/assets/03c04825-24d3-40c7-be76-b6d3cee987da)
+  ![image](https://github.com/user-attachments/assets/8210fad8-3289-4ce4-af3a-92ed863e5b95)
 
 Topic Modelling
-- Latent Dirichlet Allocation (LDA) technique is used to identify the main topics present in a collection of resumes. E.g. Group resumes into themes or topics, such as "Project Management", "Software Development" or "Data Analysis".
+- Latent Dirichlet Allocation (LDA) technique is used to identify the main topics present in a collection of resumes.
 - Purpose: Quickly identify suitable candidates based on their skills and experiences listed in their resumes.
 - Provided the function for users to search for the keyword appearing in each topic and ultimately return the relevant resumes.
+
+  ![image](https://github.com/user-attachments/assets/b04312df-138f-4f23-90fa-9a8dc9648292)
+
+  Search candidates' resume based on keywords
+  ![image](https://github.com/user-attachments/assets/a6de1a2a-c87a-49c8-a7a2-fe777688f7b2)
+
+EDA 
+1) WordCloud
+
+   ![image](https://github.com/user-attachments/assets/7f0f070f-1a23-4207-a4c5-ba17c0eb5a02)
+
+3) N-Grams
+   
+   ![image](https://github.com/user-attachments/assets/e5cb1942-fcd0-478c-857c-d4a67c203654)
+
 
 Rule-based Model (Established patterns or rules to identify)
 1) Identify candidates name
