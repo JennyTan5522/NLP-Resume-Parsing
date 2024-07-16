@@ -18,6 +18,7 @@ Dataset:
 4) Additional 5 Resume randomly selected to perform testing based on different models
 
 Data Preprocessing:
+
 Based on our research, not all the resumes will be cleaned in the NER processes. Therefore, in this study, we will evaluate the performance of resume named entity extraction (NER) before preprocessing and after preprocessing. 
 
 CV Recommendation Model
@@ -56,10 +57,13 @@ Results
 
 3) Spacy
    ![image](https://github.com/user-attachments/assets/ce956f6a-8f5c-430a-9d41-c066be43cf91)
+   
    ![image](https://github.com/user-attachments/assets/606a315c-89f7-494c-a290-0d8775e0911b)
+   
    ![image](https://github.com/user-attachments/assets/c84166a0-4f08-4a7b-b226-ef0bfdbe9b8d)
 
   Spacy Prediction (Testing)
+  
   ![image](https://github.com/user-attachments/assets/f14d92a7-40b7-49f3-a7b6-f57617be083d)
 
 **Proposed Hybrid Model (Rule-based + Spacy)**
@@ -69,7 +73,9 @@ Results
 
 Sample Results:
 ![image](https://github.com/user-attachments/assets/193270aa-2334-4dff-a3f2-714b5bd6f4cf)
+
 ![image](https://github.com/user-attachments/assets/b4194fb1-d29d-4cdf-9e93-f3a260afb914)
+
 ![image](https://github.com/user-attachments/assets/27536c3d-73f8-4d87-82ab-47d488ef236c)
 
 Preprocessing Results before and after
@@ -77,12 +83,15 @@ Preprocessing Results before and after
 
 Extra Modules (NER Functionalities - Search, Summary and Ranking)
 1. Search candidate and retrieve the Resume Summary Report
+   
 ![image](https://github.com/user-attachments/assets/b6374a10-7ec3-4e26-87b8-77e0819faa97)
 
-2. Skills Ranking Score
+3. Skills Ranking Score
+   
 ![image](https://github.com/user-attachments/assets/48c9aa21-f0f6-401d-94aa-8850bac1dd60)
 
-3. Search candidate 
+5. Search candidate
+   
 ![image](https://github.com/user-attachments/assets/07fe3556-a047-4480-aea8-10da094b74c4)
 
 
