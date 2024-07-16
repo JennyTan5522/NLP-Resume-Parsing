@@ -90,7 +90,8 @@ Results
   ![image](https://github.com/user-attachments/assets/f14d92a7-40b7-49f3-a7b6-f57617be083d)
 
 **Proposed Hybrid Model (Rule-based + Spacy)**
-- The hybrid model is a combination of rule-based, machine learning, and transformer NER. It inherits all the strengths of each NER approach by covering the weaknesses of the others. 
+- The hybrid model is a combination of rule-based, machine learning, and transformer NER. It inherits all the strengths of each NER approach by covering the weaknesses of the others.
+  
 ![image](https://github.com/user-attachments/assets/bda9b543-48d5-4d6e-8b58-f4fab260bb1c)
 
 
