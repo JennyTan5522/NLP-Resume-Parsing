@@ -50,12 +50,15 @@ Pre-trained on a large dataset of text documents
 
 Results
 1) Rule-based
+   
    ![image](https://github.com/user-attachments/assets/b22db245-f30d-40e1-acef-81a209bfc9ae)
 
-2) Machine Learning + Rule-based
+3) Machine Learning + Rule-based
+   
    ![image](https://github.com/user-attachments/assets/a3c52252-01b6-4bdf-a684-d76808b96c44)
 
-3) Spacy
+5) Spacy
+   
    ![image](https://github.com/user-attachments/assets/ce956f6a-8f5c-430a-9d41-c066be43cf91)
    
    ![image](https://github.com/user-attachments/assets/606a315c-89f7-494c-a290-0d8775e0911b)
