@@ -97,6 +97,14 @@ Extra Modules (NER Functionalities - Search, Summary and Ranking)
    
 ![image](https://github.com/user-attachments/assets/07fe3556-a047-4480-aea8-10da094b74c4)
 
+Results and Findings:
+1) Hybrid entity extraction showed better performance as compared to the single model. It has the highest detectability in classifying the value to respective entity labels. The hybrid model can extract the resume-named entities from the tested resume, such as name, email, phone number, skills, designation, company and more. The proposed hybrid strategy enhances the results for identifying the resume-named entities with an achievement of precision 87.62% and recall 96.91%. 
+
+2) We found that preprocessed text caused our rule-based model to perform worse than when it was applied to the original text. This is likely because the preprocessing step removed important information.
+
+Future Work and Limitation:
+- The non-standardization of resume structure makes it difficult to automatically extract named entities recognition.
+
 
 
 
