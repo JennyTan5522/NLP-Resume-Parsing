@@ -13,8 +13,8 @@ Objectives:
 
 Dataset:
 1) Around 200 Resumes from Kaggle: **Rule-based and Machine Learning** training and testing data
-2) Around 220 Annotated Resumes from Kaggle: **BERT** training and testing data
-3) Around 200 Resumes from Kaggle: **Spacy** training and testing data
+2) Around 220 Annotated Resumes from Kaggle: **BERT** training and testing data (JSON format)
+3) Around 200 Resumes from Kaggle: **Spacy** training and testing data (JSON format)
 4) Additional 5 Resume randomly selected to perform testing based on different models
 
 Data Preprocessing:
@@ -28,6 +28,69 @@ Topic Modelling
 - Latent Dirichlet Allocation (LDA) technique is used to identify the main topics present in a collection of resumes. E.g. Group resumes into themes or topics, such as "Project Management", "Software Development" or "Data Analysis".
 - Purpose: Quickly identify suitable candidates based on their skills and experiences listed in their resumes.
 - Provided the function for users to search for the keyword appearing in each topic and ultimately return the relevant resumes.
+
+Rule-based Model (Established patterns or rules to identify)
+1) Identify candidates name
+2) Identify phone number
+3) Identify email address
+4) Identify qualifications
+5) Identify graduation years
+6) Identify locations
+7) Identify candidate job skills (check if any keywords matched from the skill_set.txt corpus)
+8) Identify university names
+9) Identify company name
+10) Identify candidate's designations or working experience (check if any keywords matched with job titles in the job-title.txt corpus)
+
+Machine learning based named entities recognition labeling
+![image](https://github.com/user-attachments/assets/30b0e2b0-7de3-45cd-9414-3f8a23de0878)
+
+Spacy Model:
+Pre-trained on a large dataset of text documents
+
+Results
+1) Rule-based
+   ![image](https://github.com/user-attachments/assets/b22db245-f30d-40e1-acef-81a209bfc9ae)
+
+2) Machine Learning + Rule-based
+   ![image](https://github.com/user-attachments/assets/a3c52252-01b6-4bdf-a684-d76808b96c44)
+
+3) Spacy
+   ![image](https://github.com/user-attachments/assets/ce956f6a-8f5c-430a-9d41-c066be43cf91)
+   ![image](https://github.com/user-attachments/assets/606a315c-89f7-494c-a290-0d8775e0911b)
+   ![image](https://github.com/user-attachments/assets/c84166a0-4f08-4a7b-b226-ef0bfdbe9b8d)
+
+  Spacy Prediction (Testing)
+  ![image](https://github.com/user-attachments/assets/f14d92a7-40b7-49f3-a7b6-f57617be083d)
+
+**Proposed Hybrid Model (Rule-based + Spacy)**
+- The hybrid model is a combination of rule-based, machine learning, and transformer NER. It inherits all the strengths of each NER approach by covering the weaknesses of the others. 
+![image](https://github.com/user-attachments/assets/bda9b543-48d5-4d6e-8b58-f4fab260bb1c)
+
+
+Sample Results:
+![image](https://github.com/user-attachments/assets/193270aa-2334-4dff-a3f2-714b5bd6f4cf)
+![image](https://github.com/user-attachments/assets/b4194fb1-d29d-4cdf-9e93-f3a260afb914)
+![image](https://github.com/user-attachments/assets/27536c3d-73f8-4d87-82ab-47d488ef236c)
+
+Preprocessing Results before and after
+![image](https://github.com/user-attachments/assets/a21ebe85-a4f9-41bb-acbf-3e67322a7516)
+
+Extra Modules (NER Functionalities - Search, Summary and Ranking)
+1. Search candidate and retrieve the Resume Summary Report
+![image](https://github.com/user-attachments/assets/b6374a10-7ec3-4e26-87b8-77e0819faa97)
+
+2. Skills Ranking Score
+![image](https://github.com/user-attachments/assets/48c9aa21-f0f6-401d-94aa-8850bac1dd60)
+
+3. Search candidate 
+![image](https://github.com/user-attachments/assets/07fe3556-a047-4480-aea8-10da094b74c4)
+
+
+
+
+
+
+
 
   
 
