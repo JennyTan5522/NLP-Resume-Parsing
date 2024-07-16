@@ -26,6 +26,7 @@ CV Recommendation Model
 - Purpose: Allows the HR department to check for the similarity of job distributions based on Top N candidates.
   
   ![image](https://github.com/user-attachments/assets/03c04825-24d3-40c7-be76-b6d3cee987da)
+  
   ![image](https://github.com/user-attachments/assets/8210fad8-3289-4ce4-af3a-92ed863e5b95)
 
 Topic Modelling
