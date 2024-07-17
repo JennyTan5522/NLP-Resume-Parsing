@@ -10,6 +10,8 @@ Objectives:
 - CV Recommendation Model using Latent Dirichlet Allocation (LDA) based topic modelling on resume keywords and similarity scores of topic distributions.
 - The hybridisation approach of the Traditional Baseline Model, Machine-Learning-Based Model and Transformer-Based Model for named entity resume documents.
 - Automated summarization of candidates data and providing the functionalities such as searching and ranking based on the scores.
+  
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Dataset:
 1) Around 200 Resumes from Kaggle: **Rule-based and Machine Learning** training and testing data
@@ -17,28 +19,13 @@ Dataset:
 3) Around 200 Resumes from Kaggle: **Spacy** training and testing data (JSON format)
 4) Additional 5 Resume randomly selected to perform testing based on different models
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Data Preprocessing:
 
 Based on our research, not all the resumes will be cleaned in the NER processes. Therefore, in this study, we will evaluate the performance of resume named entity extraction (NER) before preprocessing and after preprocessing. 
 
-CV Recommendation Model
-- TF-IDF vectoriser to find the important terms inside the document and then computes the cosine similarity between the job description and CV.
-- Purpose: Allows the HR department to check for the similarity of job distributions based on Top N candidates.
-  
-  ![image](https://github.com/user-attachments/assets/03c04825-24d3-40c7-be76-b6d3cee987da)
-  
-  ![image](https://github.com/user-attachments/assets/8210fad8-3289-4ce4-af3a-92ed863e5b95)
-
-Topic Modelling
-- Latent Dirichlet Allocation (LDA) technique is used to identify the main topics present in a collection of resumes.
-- Purpose: Quickly identify suitable candidates based on their skills and experiences listed in their resumes.
-- Provided the function for users to search for the keyword appearing in each topic and ultimately return the relevant resumes.
-
-  ![image](https://github.com/user-attachments/assets/b04312df-138f-4f23-90fa-9a8dc9648292)
-
-  Search candidates' resume based on keywords
-  
-  ![image](https://github.com/user-attachments/assets/a6de1a2a-c87a-49c8-a7a2-fe777688f7b2)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 EDA 
 1) WordCloud
@@ -49,6 +36,7 @@ EDA
    
    ![image](https://github.com/user-attachments/assets/e5cb1942-fcd0-478c-857c-d4a67c203654)
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Rule-based Model (Established patterns or rules to identify)
 1) Identify candidates name
@@ -62,11 +50,18 @@ Rule-based Model (Established patterns or rules to identify)
 9) Identify company name
 10) Identify candidate's designations or working experience (check if any keywords matched with job titles in the job-title.txt corpus)
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Machine learning based named entities recognition labeling
+
 ![image](https://github.com/user-attachments/assets/30b0e2b0-7de3-45cd-9414-3f8a23de0878)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Spacy Model:
 Pre-trained on a large dataset of text documents
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Results
 1) Rule-based
@@ -105,7 +100,33 @@ Sample Results:
 Preprocessing Results before and after
 ![image](https://github.com/user-attachments/assets/a21ebe85-a4f9-41bb-acbf-3e67322a7516)
 
-Extra Modules (NER Functionalities - Search, Summary and Ranking)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CV Recommendation Model
+- TF-IDF vectoriser to find the important terms inside the document and then computes the cosine similarity between the job description and CV.
+- Purpose: Allows the HR department to check for the similarity of job distributions based on Top N candidates.
+  
+  ![image](https://github.com/user-attachments/assets/03c04825-24d3-40c7-be76-b6d3cee987da)
+  
+  ![image](https://github.com/user-attachments/assets/8210fad8-3289-4ce4-af3a-92ed863e5b95)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic Modelling
+- Latent Dirichlet Allocation (LDA) technique is used to identify the main topics present in a collection of resumes.
+- Purpose: Quickly identify suitable candidates based on their skills and experiences listed in their resumes.
+- Provided the function for users to search for the keyword appearing in each topic and ultimately return the relevant resumes.
+
+  ![image](https://github.com/user-attachments/assets/b04312df-138f-4f23-90fa-9a8dc9648292)
+
+  Search candidates' resume based on keywords
+  
+  ![image](https://github.com/user-attachments/assets/a6de1a2a-c87a-49c8-a7a2-fe777688f7b2)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NER Functionalities - Search, Summary and Ranking
+
 1. Search candidate and retrieve the Resume Summary Report
    
 ![image](https://github.com/user-attachments/assets/b6374a10-7ec3-4e26-87b8-77e0819faa97)
@@ -117,6 +138,8 @@ Extra Modules (NER Functionalities - Search, Summary and Ranking)
 5. Search candidate
    
 ![image](https://github.com/user-attachments/assets/07fe3556-a047-4480-aea8-10da094b74c4)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Results and Findings:
 1) Hybrid entity extraction showed better performance as compared to the single model. It has the highest detectability in classifying the value to respective entity labels. The hybrid model can extract the resume-named entities from the tested resume, such as name, email, phone number, skills, designation, company and more. The proposed hybrid strategy enhances the results for identifying the resume-named entities with an achievement of precision 87.62% and recall 96.91%. 
