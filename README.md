@@ -25,6 +25,10 @@ Data Preprocessing:
 
 Based on our research, not all the resumes will be cleaned in the NER processes. Therefore, in this study, we will evaluate the performance of resume named entity extraction (NER) before preprocessing and after preprocessing. 
 
+Flow Chart:
+
+![image](https://github.com/user-attachments/assets/2718dead-f24d-4994-a59c-04e403282f59)
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 EDA 
